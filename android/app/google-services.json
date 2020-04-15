@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "837377769900",
+    "firebase_url": "https://flutter-notes-tdd-app.firebaseio.com",
+    "project_id": "flutter-notes-tdd-app",
+    "storage_bucket": "flutter-notes-tdd-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837377769900:android:d5137de44bd9a5e99cfa09",
+        "android_client_info": {
+          "package_name": "premiumapp.org.ddd_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837377769900-f2jnd5hjsgrs4g120qbi1bjfupvckrni.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "premiumapp.org.ddd_flutter",
+            "certificate_hash": "e3cf76a793537684e1186e94240a0d93a9b7991b"
+          }
+        },
+        {
+          "client_id": "837377769900-lt1el18tkf4li9vv234o93flh15996kg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn_vfl9pSc0nr46lg83qZSGgIh5EJnF4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837377769900-lt1el18tkf4li9vv234o93flh15996kg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

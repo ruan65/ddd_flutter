@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:ddd_flutter/domain/core/failures.dart';
-import 'package:ddd_flutter/domain/core/value_objects.dart';
+import 'package:ddd_flutter/domain/core/value_object.dart';
 import 'package:ddd_flutter/domain/core/value_validators.dart';
 
 class EmailAddress extends ValueObject<String> {
