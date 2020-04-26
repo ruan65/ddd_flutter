@@ -7,20 +7,7 @@ part of 'sign_in_form_state.dart';
 // FreezedGenerator
 // **************************************************************************
 
-mixin _$SignInFormState {
-  EmailAddress get emailAddress;
-  Password get password;
-  bool get showErrorMessages;
-  bool get isSubmitted;
-  Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
-
-  SignInFormState copyWith(
-      {EmailAddress emailAddress,
-      Password password,
-      bool showErrorMessages,
-      bool isSubmitted,
-      Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption});
-}
+T _$identity<T>(T value) => value;
 
 class _$SignInFormStateTearOff {
   const _$SignInFormStateTearOff();
@@ -41,7 +28,112 @@ class _$SignInFormStateTearOff {
   }
 }
 
+// ignore: unused_element
 const $SignInFormState = _$SignInFormStateTearOff();
+
+mixin _$SignInFormState {
+  EmailAddress get emailAddress;
+  Password get password;
+  bool get showErrorMessages;
+  bool get isSubmitted;
+  Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
+
+  $SignInFormStateCopyWith<SignInFormState> get copyWith;
+}
+
+abstract class $SignInFormStateCopyWith<$Res> {
+  factory $SignInFormStateCopyWith(
+          SignInFormState value, $Res Function(SignInFormState) then) =
+      _$SignInFormStateCopyWithImpl<$Res>;
+  $Res call(
+      {EmailAddress emailAddress,
+      Password password,
+      bool showErrorMessages,
+      bool isSubmitted,
+      Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption});
+}
+
+class _$SignInFormStateCopyWithImpl<$Res>
+    implements $SignInFormStateCopyWith<$Res> {
+  _$SignInFormStateCopyWithImpl(this._value, this._then);
+
+  final SignInFormState _value;
+  // ignore: unused_field
+  final $Res Function(SignInFormState) _then;
+
+  @override
+  $Res call({
+    Object emailAddress = freezed,
+    Object password = freezed,
+    Object showErrorMessages = freezed,
+    Object isSubmitted = freezed,
+    Object authFailureOrSuccessOption = freezed,
+  }) {
+    return _then(_value.copyWith(
+      emailAddress: emailAddress == freezed
+          ? _value.emailAddress
+          : emailAddress as EmailAddress,
+      password: password == freezed ? _value.password : password as Password,
+      showErrorMessages: showErrorMessages == freezed
+          ? _value.showErrorMessages
+          : showErrorMessages as bool,
+      isSubmitted:
+          isSubmitted == freezed ? _value.isSubmitted : isSubmitted as bool,
+      authFailureOrSuccessOption: authFailureOrSuccessOption == freezed
+          ? _value.authFailureOrSuccessOption
+          : authFailureOrSuccessOption as Option<Either<AuthFailure, Unit>>,
+    ));
+  }
+}
+
+abstract class _$SignInFormStateCopyWith<$Res>
+    implements $SignInFormStateCopyWith<$Res> {
+  factory _$SignInFormStateCopyWith(
+          _SignInFormState value, $Res Function(_SignInFormState) then) =
+      __$SignInFormStateCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {EmailAddress emailAddress,
+      Password password,
+      bool showErrorMessages,
+      bool isSubmitted,
+      Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption});
+}
+
+class __$SignInFormStateCopyWithImpl<$Res>
+    extends _$SignInFormStateCopyWithImpl<$Res>
+    implements _$SignInFormStateCopyWith<$Res> {
+  __$SignInFormStateCopyWithImpl(
+      _SignInFormState _value, $Res Function(_SignInFormState) _then)
+      : super(_value, (v) => _then(v as _SignInFormState));
+
+  @override
+  _SignInFormState get _value => super._value as _SignInFormState;
+
+  @override
+  $Res call({
+    Object emailAddress = freezed,
+    Object password = freezed,
+    Object showErrorMessages = freezed,
+    Object isSubmitted = freezed,
+    Object authFailureOrSuccessOption = freezed,
+  }) {
+    return _then(_SignInFormState(
+      emailAddress: emailAddress == freezed
+          ? _value.emailAddress
+          : emailAddress as EmailAddress,
+      password: password == freezed ? _value.password : password as Password,
+      showErrorMessages: showErrorMessages == freezed
+          ? _value.showErrorMessages
+          : showErrorMessages as bool,
+      isSubmitted:
+          isSubmitted == freezed ? _value.isSubmitted : isSubmitted as bool,
+      authFailureOrSuccessOption: authFailureOrSuccessOption == freezed
+          ? _value.authFailureOrSuccessOption
+          : authFailureOrSuccessOption as Option<Either<AuthFailure, Unit>>,
+    ));
+  }
+}
 
 class _$_SignInFormState implements _SignInFormState {
   const _$_SignInFormState(
@@ -105,28 +197,8 @@ class _$_SignInFormState implements _SignInFormState {
       const DeepCollectionEquality().hash(authFailureOrSuccessOption);
 
   @override
-  _$_SignInFormState copyWith({
-    Object emailAddress = freezed,
-    Object password = freezed,
-    Object showErrorMessages = freezed,
-    Object isSubmitted = freezed,
-    Object authFailureOrSuccessOption = freezed,
-  }) {
-    return _$_SignInFormState(
-      emailAddress: emailAddress == freezed
-          ? this.emailAddress
-          : emailAddress as EmailAddress,
-      password: password == freezed ? this.password : password as Password,
-      showErrorMessages: showErrorMessages == freezed
-          ? this.showErrorMessages
-          : showErrorMessages as bool,
-      isSubmitted:
-          isSubmitted == freezed ? this.isSubmitted : isSubmitted as bool,
-      authFailureOrSuccessOption: authFailureOrSuccessOption == freezed
-          ? this.authFailureOrSuccessOption
-          : authFailureOrSuccessOption as Option<Either<AuthFailure, Unit>>,
-    );
-  }
+  _$SignInFormStateCopyWith<_SignInFormState> get copyWith =>
+      __$SignInFormStateCopyWithImpl<_SignInFormState>(this, _$identity);
 }
 
 abstract class _SignInFormState implements SignInFormState {
@@ -153,12 +225,6 @@ abstract class _SignInFormState implements SignInFormState {
   bool get isSubmitted;
   @override
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
-
   @override
-  _SignInFormState copyWith(
-      {EmailAddress emailAddress,
-      Password password,
-      bool showErrorMessages,
-      bool isSubmitted,
-      Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption});
+  _$SignInFormStateCopyWith<_SignInFormState> get copyWith;
 }
